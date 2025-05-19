@@ -1,147 +1,224 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio de Heisenberg</title>
-  <style>
-    body {
-      background-color: black;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #0d0d0d;
+            color: white;
+        }
 
-    header {
-      background-color: #0c4f3d;
-      color: white;
-      padding: 20px;
-    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #002300;
+            padding: 10px 0;
+        }
 
-    nav {
-      background-color: #056035;
-      text-align: center;
-      padding: 10px;
-    }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
+        header {
+            background-color: #0d0d0d;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-    main {
-      padding: 20px;
-      background-color: black;
-    }
+        .profissao {
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #ccc;
+        }
 
-    section {
-      margin-bottom: 40px;
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      background-color: gray;
-      color: white;
-    }
+        .nome {
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 0.9;
+        }
 
-    article {
-      margin-bottom: 20px;
-      padding-bottom: 15px;
-      border-bottom: 1px solid #ddd;
-    }
+        .QuemSou {
+            background-color: #1a1a1a;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
 
-    h2 {
-      color: #2c3e50;
-    }
+        .QuemSou div {
+            flex: 1;
+            min-width: 300px;
+            padding: 20px;
+        }
 
-    footer {
-      background-color: #0c4f3d;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
+        .QuemSou img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
 
-    a {
-      color: #2980b9;
-    }
+        .techskill {
+            background-color: #0d0d0d;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-    .image{
-        width: 300px;
-        height: 300px;
-        border-radius: 300px;
-    }
-  </style>
+        .tech-skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .tech-skills li {
+            background-color: #004d00;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .curri {
+            background-color: #1a1a1a;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .curriculo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .curriculo-container img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+
+        .curriculo-texto {
+            flex: 2;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 30px;
+            color: white;
+        }
+
+        .curriculo-texto div {
+            flex: 1;
+            min-width: 250px;
+            text-align: left;
+        }
+
+        .curriculo-texto ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .aval {
+            background-color: #0d0d0d;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #002300;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Tech Skills</a>
+        <a href="#curriculo">Currículo</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contatos">Contatos</a>
+    </nav>
 
-  <header>
-    <h1>Heisenber</h1>
-    <p>Desenvolvedor Front-End</p>
-    <img src="https://translate.google.com/website?sl=auto&tl=pt&hl=pt-BR&client=srp&u=https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png" class="image">
-  </header>
+    <header>
+        <p class="profissao">DESENVOLVEDOR DE SOFTWARE</p>
+        <h1 class="nome">WALTER<br>WHITE</h1>
+    </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <main>
-
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Sou um técnico de tecnologia, formado em HTML, CSS e lógica de programação.</p>
+    <section class="QuemSou" id="sobre">
+        <div>
+            <h2>Quem sou eu?</h2>
+            <p>Sou Walter White, profissional com uma trajetória singular que une educação, tecnologia e empreendedorismo. Iniciei minha carreira como professor de Química, área na qual me especializei após a formação em Pedagogia. Ao longo dos anos, ampliei minha atuação acadêmica com formações em Análise e Desenvolvimento de Sistemas (ADS) e Farmácia, construindo uma base sólida tanto na ciência quanto na tecnologia. Além da sala de aula e do universo da programação, também explorei o empreendedorismo. Gerenciei um lava-rápido, atuei na venda online de medicamentos e, mais recentemente, fundei o marketplace PharmaImport.com, unindo minha experiência farmacêutica e tecnológica para oferecer uma solução inovadora no setor. Minha jornada é marcada por versatilidade, resiliência e busca constante por conhecimento. Estou sempre aberto a novos desafios que unam minhas múltiplas áreas de expertise.</p>
+        </div>
+        <div>
+            <img src="" alt="Walter White">
+        </div>
     </section>
 
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>Lógica de Programação</li>
-        <li>Git e GitHub</li>
-        <li>Aprendendo JavaScript</li>
-      </ul>
+    <section class="techskill" id="skills">
+        <h2 style="font-size: 50px;">Tech Skills</h2>
+        <div class="tech-skills">
+            <ul>
+                <li>Java</li>
+                <li>Fortran</li>
+                <li>Assembly</li>
+                <li>Cobol</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>C++</li>
+                <li>CSS</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="projetos">
-      <h2>Projetos</h2>
-
-      <article>
-        <h3>Projeto 1: Página Pessoal</h3>
-        <p>Uma página com minhas informações pessoais, feita apenas com HTML e CSS.</p>
-        <p><strong>Link:</strong> <a href="#">Ver Projeto</a></p>
-      </article>
-
-      <article>
-        <h3>Projeto 2: Lista de Tarefas</h3>
-        <p>Uma aplicação simples para listar tarefas do dia a dia. Feita com HTML, CSS e um pouco de JavaScript.</p>
-        <p><strong>Link:</strong> <a href="#">Ver Projeto</a></p>
-      </article>
-
-      <article>
-        <h3>Projeto 3: Site de Receitas</h3>
-        <p>Um site que apresenta receitas culinárias em um layout limpo e organizado.</p>
-        <p><strong>Link:</strong> <a href="#">Ver Projeto</a></p>
-      </article>
-
+    <section class="curri" id="curriculo">
+        <h2 style="font-size: 50px;">CURRÍCULO</h2>
+        <div class="curriculo-container">
+            <div>
+                <img src="" alt="Walter White">
+            </div>
+            <div class="curriculo-texto">
+                <div>
+                    <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+                    <ul>
+                        <li>Professor de química, Albuquerque Academy</li>
+                        <li>Gerente A1A Car Wash (Octopus Car Wash)</li>
+                        <li>Desenvolvedor de medicamento</li>
+                        <li>Desenvolvedor de Software, Ardham Technologies</li>
+                        <li>Fundou site de venda de medicamentos, Pharma Import</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>FORMAÇÃO ACADÊMICA</h3>
+                    <ul>
+                        <li>Graduado em ADS, Universidade Braz Cubas</li>
+                        <li>Graduado em Química, Universidade Braz Cubas</li>
+                        <li>Cursos avulsos: JAVA, FORTRAN, COBOL, SQL, ASSEMBLY</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Email: walterwhite@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/seuusuario" target="_blank">github/heisenberg</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/walterwhite</a></p>
+    <section class="aval" id="avaliacoes">
+        <h2 style="font-size: 50px;">AVALIAÇÕES</h2>
     </section>
 
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Heisenberg. Todos os direitos reservados.</p>
-  </footer>
-
+    <footer id="contatos">
+        <h2>CONTATOS</h2>
+    </footer>
 </body>
-</html>
+</html>>
