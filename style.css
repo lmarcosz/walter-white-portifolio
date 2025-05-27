@@ -138,10 +138,26 @@ header img {
 footer {
     background-color: #002300;
     padding: 20px;
-    text-align: center;
+    
 }
 
 footer h2 {
     font-size: 25px;
     margin-bottom: 10px;
+    text-align: center;
+}
+.footer-dados{
+    list-style-type: disc;
+    padding-left: 20px;
+    display: flexbox;
+}
+.contato-item {
+     display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+.icon-contato {
+    width: 24px;
+    height: 24px;
 }
