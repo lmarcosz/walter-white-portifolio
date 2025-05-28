@@ -168,11 +168,10 @@ nav .square1{
 
 /*=======TECH SKILLS=======*/
 .techskill {
-    background-color: #0d0d0d;
-    padding: 40px 20px;
+    background-color: var(--cor5);
+    padding: 10px 20px 40px 40px;
     text-align: center;
 }
-
 .tech-skills ul {
     list-style: none;
     padding: 0;
@@ -181,13 +180,33 @@ nav .square1{
     justify-content: center;
     gap: 15px;
 }
-
 .tech-skills li {
-    background-color: #004d00;
+    background-color: var(--cor4);
+    display: flex;
+    align-content: center;
+    height: 50px;
+    width: 180px;
+    color: var(--cor1);
+    font-size: 20px;
+    font-weight: bold;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 20px;
+    box-shadow: 0px -1.5px 2px rgba(255, 255, 255, 0.37);
+}
+.language{
+    padding-top: 15px;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+.icon{
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    margin: 5px 10px 0px 0px;
 }
 
+/*=======CURRÍCULO=======*/
 .curri {
     background-color: #1a1a1a;
     padding: 40px 20px;
