@@ -1,34 +1,63 @@
 @charset "UTF-8";
 
+/*CONFIG GLOBAIS*/
+:root{
+    --cor1: #FAFCF9;
+    --cor2: #056035;
+    --cor3: #0C4F3D;
+    --cor4: #002300;
+    --cor5: #0D0D0D;
+    --fonte1: 'Arial', sans-serif;
+    --fonte2: 'Courier New', Courier, monospace;
+    --fonte3: 'Georgia', serif;
+}
+
+*{
+    font-family: var(--fonte1);
+}
+
+/*CONFIG DE CORPO*/
 body {
-    margin: 0;
-    background-color: #0d0d0d;
+    background-color: var(--cor5);
+    margin: 0%;
+    padding: 0%;
     color: white;
+}
+
+header {
+    display: flex;
+    background-color: var(--cor4);
+    height: 80px;
+    padding: 0%;
+    margin: 0%;
+}
+.menu {
+    display: flex;
+    justify-content: right;
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin: 0px 50px;
+}
+.menu a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 10px 30px;
 }
 
 nav {
-    display: flex;
-    background-color: #002300;
-    padding: 10px 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-nav img {
-    width: 25px;
-    }
-
-header {
-    background-color: #0d0d0d;
+    background-color: var(--cor5);
     padding: 40px 20px;
     text-align: center;
     display: flex;
 }
-header img {
+nav img {
     width: 100%;
     max-width: 250px;
     border-radius: 10px;
@@ -152,7 +181,7 @@ footer h2 {
     display: flexbox;
 }
 .contato-item {
-     display: flex;
+    display: flex;
     align-items: center;
     gap: 10px;
     font-size: 16px;
