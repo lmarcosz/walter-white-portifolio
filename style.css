@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*==========FONTES==========*/
 @font-face {
     font-family: 'ProtestStrike';
     src: url(./fonts/ProtestStrike-Regular.ttf) format('truetype');
@@ -434,18 +435,12 @@ h2:hover {
 .QuemSouTexto p:hover {
     color: var(--cor1);
 }
-.square2 img:hover {
-    animation: brilho 0.5s ease-in-out;
-}
 .tech-skills li:hover {
     background-color: var(--cor3);
     color: var(--cor8);
 }
 .curriculo-texto li:hover {
     color: var(--cor1);
-}
-.square3:active {
-    animation: square-up 0.1s ease;
 }
 .avaliacao-item:hover {
     background-color: var(--cor3);
@@ -483,21 +478,6 @@ h2:hover {
         translate: 0px -30px;
         rotate: 10deg;
         filter: brightness(100%);
-    }
-}
-
-@keyframes square-up {
-    0% {
-        translate: 0px 0px;
-        box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
-    }
-    50% {
-        translate: 0px -20px;
-        box-shadow: 0px 20px 2px rgba(0, 0, 0, 0.5);
-    }
-    100% {
-        translate: 0px 0px;
-        box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
     }
 }
 
