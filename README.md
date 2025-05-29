@@ -1,3 +1,10 @@
-# Walter White - Portifólio
+# Walter White - Portifólio Dev
+Este projeto consiste em uma página portifólio fictícia do personagem Walter White, da série Breaking Bad, fazendo parte de uma das avaliações para a disciplina Aplicações para Internet do curso de Ciência da Computação do Centro Universitário Braz Cubas.
 
-dasjkdasjkdaskdsajk
+## Autores
+- [Eric Paschoal](https://github.com/ToinSoberano)
+- [Marcos Silva](https://github.com/lmarcosz)
+- []()
+
+## Design
+![image](images/portifolio-design.png)
