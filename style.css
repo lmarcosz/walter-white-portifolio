@@ -15,12 +15,15 @@
 
 /*CONFIG GLOBAIS*/
 :root{
+    --cor0: #fafcf9ab;
     --cor1: #FAFCF9;
     --cor2: #056035;
     --cor3: #0C4F3D;
     --cor4: #002300;
     --cor5: #0D0D0D;
     --cor6: #1a1a1a;
+    --cor7: #004d04;
+    --cor8: #59a1ff;
     --fonte1: 'Arial', sans-serif;
     --fonte2: 'ProtestStrike', sans-serif;
     --fonte3: 'PTSansCaption', sans-serif;
@@ -29,6 +32,7 @@
 
 /*=======CONFIG GERAIS=======*/
 body {
+    height: 100vh;
     background-color: var(--cor5);
     margin: 0%;
     padding: 0%;
@@ -91,7 +95,8 @@ nav {
     gap: 20px;
 }
 nav .square1 {
-    background: radial-gradient(circle at center, var(--cor2) 0%, var(--cor4) 70%);
+    background: radial-gradient(circle at center, var(--cor2) 0%, var(--cor4) 80%);
+    animation: luz-imagem 4s ease-in-out infinite;
     height: 400px;
     width: 450px;
     align-items: end;
@@ -139,6 +144,7 @@ nav .square1 {
     width: 380px;
 }
 .formula {
+    animation: formula-float-translate 7s ease-in-out infinite;
     width: 450px;
     margin: 20px auto;
     padding-bottom: 50px;
@@ -157,7 +163,8 @@ nav .square1 {
     padding: 40px 20px;
 }
 .square2 {
-    background: radial-gradient(circle at center, var(--cor2) 0%, var(--cor4) 50%);
+    background: radial-gradient(circle at center, var(--cor2) 0%, var(--cor4) 80%);
+    animation: luz-imagem 6s ease-in-out infinite;
     height: 400px;
     width: 350px;
     align-items: end;
@@ -180,7 +187,7 @@ nav .square1 {
     text-align: justify;
     font-size: 18px;
     line-height: 1.3;
-    color: var(--cor1);
+    color: var(--cor0);
 }
 
 /*=======TECH SKILLS=======*/
@@ -248,7 +255,8 @@ nav .square1 {
     margin: auto;
 }
 .square3 {
-    background: radial-gradient(circle at center, var(--cor2) 0%, var(--cor4) 50%);
+    background: radial-gradient(circle at center, var(--cor2) 0%, var(--cor4) 70%);
+    animation: luz-imagem 4s ease-in-out infinite;
     height: 300px;
     width: 300px;
     align-items: end;
@@ -275,6 +283,7 @@ nav .square1 {
 }
 .curriculo-texto h3 {
     text-align: left;
+    font-size: 20px;
     margin: 30px auto 0px auto;
 }
 .curriculo-texto ul {
@@ -285,8 +294,9 @@ nav .square1 {
     margin-top: 10px;
 }
 .curriculo-texto li {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
+    color: var(--cor0);
 }
 .barra{
     background-color: var(--cor1);
@@ -321,6 +331,7 @@ nav .square1 {
     border-radius: 40px;
     width: 200px;
     height: 90px;
+    box-shadow: 0px -1.5px 2px rgba(255, 255, 255, 0.37);
 }
 .avaliacao-texto{
     translate: 0px -55px;
@@ -405,4 +416,99 @@ footer h2 {
     height: 60px;
 }
 
-/*=======EFEITOS E ANIMAÇÕES=======*/
+/*=======HOVERS==========*/
+h2:hover {
+    color: var(--cor8);
+    text-decoration: none;
+}
+.menu a:hover {
+    color: var(--cor8);
+    text-decoration: underline;
+}
+.square1 img:hover {
+    animation: img-move 0.5s ease-in-out;
+}
+.nome-titulo :hover {
+    color: var(--cor8);
+}
+.QuemSouTexto p:hover {
+    color: var(--cor1);
+}
+.square2 img:hover {
+    animation: brilho 0.5s ease-in-out;
+}
+.tech-skills li:hover {
+    background-color: var(--cor3);
+    color: var(--cor8);
+}
+.curriculo-texto li:hover {
+    color: var(--cor1);
+}
+.square3:active {
+    animation: square-up 0.1s ease;
+}
+.avaliacao-item:hover {
+    background-color: var(--cor3);
+    color: var(--cor8);
+}
+.contato-item-texto:hover{
+    color: var(--cor8);
+}
+
+/*=======ANIMAÇÕES=======*/
+@keyframes luz-imagem{
+    0% {
+        filter: brightness(100%);
+    }
+    50% {
+        filter: brightness(70%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+@keyframes formula-float-translate {
+    0% {
+        translate: 0px -30px;
+        rotate: 10deg;
+        filter: brightness(100%);
+    }
+    50% {
+        translate: 0px 30px;
+        rotate: -5deg;
+        filter: brightness(50%);
+    }
+    100% {
+        translate: 0px -30px;
+        rotate: 10deg;
+        filter: brightness(100%);
+    }
+}
+
+@keyframes square-up {
+    0% {
+        translate: 0px 0px;
+        box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        translate: 0px -20px;
+        box-shadow: 0px 20px 2px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        translate: 0px 0px;
+        box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+
+@keyframes img-move {
+    0% {
+        translate: 0px 0px;
+    }
+    50% {
+        translate: -10px 0px;
+    }
+    100% {
+        translate: 0px 0px;
+    }
+}
