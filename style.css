@@ -42,6 +42,7 @@ header {
 }
 .menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: right;
     flex-grow: 1;
     flex-direction: row;
@@ -66,6 +67,7 @@ nav {
     padding: 40px 20px;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     gap: 20px;
@@ -208,53 +210,125 @@ nav .square1{
 
 /*=======CURRÍCULO=======*/
 .curri {
-    background-color: #1a1a1a;
+    background-color: var(--cor6);
     padding: 40px 20px;
     text-align: center;
 }
-
+.curri h2 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
 .curriculo-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.curriculo-container img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
-}
-
-.curriculo-texto {
-    flex: 2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
-    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
 }
-
-.curriculo-texto div {
+.square3 {
+    background: radial-gradient(circle at center, var(--cor2) 0%, var(--cor4) 50%);
+    height: 300px;
+    width: 300px;
+    align-items: end;
+    justify-content: left;
+    display: flex;
+    margin: 0px 20px 20px 20px;
+    padding-top: 100px;
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.square3 img {
+    width: 300px;
+}
+.curriculo-texto {
     flex: 1;
-    min-width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: var(--cor1);
+    text-align: center;
+    width: 150px;
+}
+.curriculo-texto h3 {
     text-align: left;
 }
-
 .curriculo-texto ul {
     list-style-type: disc;
     padding-left: 20px;
+    text-align: justify;
+}
+.curriculo-texto li {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.barra{
+    background-color: var(--cor1);
+    width: 2px;
+    height: 400px;
 }
 
+/*=======AVALIAÇÕES=======*/
 .aval {
     background-color: #0d0d0d;
     padding: 40px 20px;
     text-align: center;
 }
+.aval h2{
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+.avaliacoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+.avaliacao-item{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    padding: 20px;
+    border-radius: 40px;
+    width: 200px;
+    height: 90px;
+}
+.avaliacao-texto{
+    translate: 0px -55px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.ava-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    translate: 0px -60px;
+}
+.star-img{
+    width: 60px;
+    margin-bottom: 0px;
+}
+#star5{
+    width: 150px;
+    margin-bottom: 0px;
+    translate: 0px -80px;
+}
+#star3{
+    width: 72px;
+    margin-bottom: 0px;
+    translate: 0px -78px;
+}
+#half-star{
+    width: 33px;
+    margin-bottom: 0px;
+    translate: 0px -47px;
+}
 
+
+/*=======CONTATO=======*/
 footer {
     background-color: #002300;
     padding: 20px;
